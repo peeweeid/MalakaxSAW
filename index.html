@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./dist/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+        <div class="container">
+            <div  class="flex items-center justify-between relative">
+                <!-- logo -->
+                <div class="px-4">
+                    <a href="#home" class=" block py-6 font-DMsans text-white font-semibold" > <span class="rounded-full mr-3 bg-primary px-3 py-2">M</span> The Malaka </a>
+                </div>
+                <!-- humburger & nav menu-->
+                <div class="flex items-center px-4 ">
+                    <button id="hamburger" name="hamburger" class="block absolute right-4 lg:hidden">
+                        <span class="hamburger-line origin-top-left rounded-full transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line rounded-full transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line origin-bottom-left rounded-full transition duration-300 ease-in-out"></span>
+                    </button>
+
+                     <!-- nav-menu -->
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-slate-50 
+                    shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:max-w-full lg:bg-transparent lg:rounded-none lg:shadow-none">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="#nav-menu" class="py-2 mx-8 text-base font-bold lg:text-white text-second group-hover:text-primary flex">Top</a>
+                            </li>
+                            <li class="group">
+                                <a href="#about" class="py-2 mx-8 text-base font-semibold lg:text-white text-second group-hover:text-primary flex">for Everyone</a>
+                            </li>
+                            <li class="group">
+                                <a href="#manfaat" class="py-2 mx-8 text-base font-semibold lg:text-white text-second group-hover:text-primary flex">Benefit</a>
+                            </li>
+                            <li class="group">
+                                <a href="#book" class="py-2 mx-8 text-base font-semibold lg:text-white text-second group-hover:text-primary flex">Prefview</a>
+                            </li>
+                            <li class="group">
+                                <a href="#introduce" class="py-2 mx-8 text-base font-semibold lg:text-white text-second group-hover:text-primary flex">Penulis</a>
+                            </li>
+                            <li class="group lg:hidden">
+                                <a href="#price" class="py-2 mx-8 text-base font-semibold lg:text-white text-second group-hover:text-primary flex"><div class=" text-primary hover:text-second">DOWNLOAD</div></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="hidden lg:block">
+                 <a href="#price"><div class="bg-white font-base tracking-wider font-DMsans text-sm px-8 py-3 rounded-full text-second">Download</div></a>
+                </div>
+               
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="pt-32 pb-16 h-[900px] lg:h-[1440px] lg:pb-[830px] w-full bg-gradient-to-b from-second to-third bg-cover bg-no-repeat " style="background-image: url(./src/img/wallpaper.png);">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full lg:w-1/2 md:w-1/3 self-center px-4 mb-10">
+                    <h1 class="font-medium font-DMsans text-white text-2xl lg:text-4xl tracking-widest max-w-md lg:max-w-lg mb-5">Sebuah framework CSS untuk developer yang memiliki phobia terhadap CSS</h1>
+                    <p class="font-DMsans text-sm text-slate-400 mb-10 max-w-md lg:text-lg">Buku ini akan mengajarkan kamu konsep utility-first pada CSS dan diakhiri dengan membangun sebuah website yang responsive dengan Tailwind CSS.</p>
+                    <div class="flex justify-center items-center max-w-md">
+                        <div class="w-1/2 ">
+                            <div><a href="" class="self-end px-3 py-3 rounded-full font-DMsans text-white text-sm shadow-md shadow-primary bg-primary"> Beli Sekarang <span class="rounded-full ring-1 mx-1 px-1 ring-white">></span></a></div>
+                        </div>
+                        <div class="w-1/2  text-center self-start lg:text-left">
+                            <span class="font-serif text-sm lg:text-lg text-white">sudah terjual</span>
+                            <div class="font-DMsans font-bold text-lg lg:text-2xl text-white">501,234+</div>
+                        </div>   
+                    </div>
+                    <div class="mt-8 ">
+                        <span class=" text-white font-serif">teknologi yang digunakan</span>
+                        <div class="flex mt-4 self-center ">
+                            <div class="text-white hover:text-primary mr-3">
+                                 <span class="fill-current "><svg role="img" width="30px" hight="30px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>HTML5</title><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/></svg></span>
+                            </div>
+                            <div class="text-white hover:text-primary mr-3">
+                                <span class=" fill-current"><svg role="img" width="30px" hight="30px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>CSS3</title><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"/></svg></span>
+                            </div>
+                            <div class="text-white hover:text-primary mr-3">
+                                <span class="fill-current"><svg role="img" width="30px" hight="30px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Firefox</title><path d="M20.452 3.445a11.002 11.002 0 00-2.482-1.908C16.944.997 15.098.093 12.477.032c-.734-.017-1.457.03-2.174.144-.72.114-1.398.292-2.118.56-1.017.377-1.996.975-2.574 1.554.583-.349 1.476-.733 2.55-.992a10.083 10.083 0 013.729-.167c2.341.34 4.178 1.381 5.48 2.625a8.066 8.066 0 011.298 1.587c1.468 2.382 1.33 5.376.184 7.142-.85 1.312-2.67 2.544-4.37 2.53-.583-.023-1.438-.152-2.25-.566-2.629-1.343-3.021-4.688-1.118-6.306-.632-.136-1.82.13-2.646 1.363-.742 1.107-.7 2.816-.242 4.028a6.473 6.473 0 01-.59-1.895 7.695 7.695 0 01.416-3.845A8.212 8.212 0 019.45 5.399c.896-1.069 1.908-1.72 2.75-2.005-.54-.471-1.411-.738-2.421-.767C8.31 2.583 6.327 3.061 4.7 4.41a8.148 8.148 0 00-1.976 2.414c-.455.836-.691 1.659-.697 1.678.122-1.445.704-2.994 1.248-4.055-.79.413-1.827 1.668-2.41 3.042C.095 9.37-.2 11.608.14 13.989c.966 5.668 5.9 9.982 11.843 9.982C18.62 23.971 24 18.591 24 11.956a11.93 11.93 0 00-3.548-8.511z"/></svg></span>
+                            </div>
+                            <div class="text-white hover:text-primary mr-3">
+                             <span class="fill-current"><svg role="img" width="30px" hight="30px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Sublime Text</title><path d="M20.953.004a.397.397 0 0 0-.18.017L3.225 5.585c-.175.055-.323.214-.402.398a.42.42 0 0 0-.06.22v5.726a.42.42 0 0 0 .06.22c.079.183.227.341.402.397l7.454 2.364-7.454 2.363c-.255.08-.463.374-.463.655v5.688c0 .282.208.444.463.363l17.55-5.565c.237-.075.426-.336.452-.6.003-.022.013-.04.013-.065V12.06c0-.281-.208-.575-.463-.656L13.4 9.065l7.375-2.339c.255-.08.462-.375.462-.656V.384c0-.211-.117-.355-.283-.38z"/></svg></span>
+                            </div>
+                            <div class="text-white hover:text-primary mr-3">
+                                <span class="fill-current"><svg role="img" width="30px" hight="30px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>CLion</title><path d="M0 0v24h24V0H0zm7.041 3a5.049 5.049 0 0 1 .219 0c1.86 0 3 .6 3.9 1.56L9.78 6.18C9 5.46 8.22 5.04 7.26 5.04c-1.68 0-2.88 1.38-2.88 3.12 0 1.68 1.2 3.12 2.88 3.12 1.14 0 1.86-.48 2.64-1.14l1.38 1.38c-1.02 1.08-2.16 1.8-4.08 1.8a5.1 5.1 0 0 1-5.1-5.16A5.049 5.049 0 0 1 7.04 3zm5.738.12H15v8.1h4.32v1.86h-6.54V3.12zM2.28 19.5h9V21h-9v-1.5Z"/></svg></span>
+                            </div>
+                            <div class="text-white hover:text-primary mr-3">
+                                <span class="fill-current"><svg role="img" width="30px" hight="30px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Node.js</title><path d="M11.998,24c-0.321,0-0.641-0.084-0.922-0.247l-2.936-1.737c-0.438-0.245-0.224-0.332-0.08-0.383 c0.585-0.203,0.703-0.25,1.328-0.604c0.065-0.037,0.151-0.023,0.218,0.017l2.256,1.339c0.082,0.045,0.197,0.045,0.272,0l8.795-5.076 c0.082-0.047,0.134-0.141,0.134-0.238V6.921c0-0.099-0.053-0.192-0.137-0.242l-8.791-5.072c-0.081-0.047-0.189-0.047-0.271,0 L3.075,6.68C2.99,6.729,2.936,6.825,2.936,6.921v10.15c0,0.097,0.054,0.189,0.139,0.235l2.409,1.392 c1.307,0.654,2.108-0.116,2.108-0.89V7.787c0-0.142,0.114-0.253,0.256-0.253h1.115c0.139,0,0.255,0.112,0.255,0.253v10.021 c0,1.745-0.95,2.745-2.604,2.745c-0.508,0-0.909,0-2.026-0.551L2.28,18.675c-0.57-0.329-0.922-0.945-0.922-1.604V6.921 c0-0.659,0.353-1.275,0.922-1.603l8.795-5.082c0.557-0.315,1.296-0.315,1.848,0l8.794,5.082c0.57,0.329,0.924,0.944,0.924,1.603 v10.15c0,0.659-0.354,1.273-0.924,1.604l-8.794,5.078C12.643,23.916,12.324,24,11.998,24z M19.099,13.993 c0-1.9-1.284-2.406-3.987-2.763c-2.731-0.361-3.009-0.548-3.009-1.187c0-0.528,0.235-1.233,2.258-1.233 c1.807,0,2.473,0.389,2.747,1.607c0.024,0.115,0.129,0.199,0.247,0.199h1.141c0.071,0,0.138-0.031,0.186-0.081 c0.048-0.054,0.074-0.123,0.067-0.196c-0.177-2.098-1.571-3.076-4.388-3.076c-2.508,0-4.004,1.058-4.004,2.833 c0,1.925,1.488,2.457,3.895,2.695c2.88,0.282,3.103,0.703,3.103,1.269c0,0.983-0.789,1.402-2.642,1.402 c-2.327,0-2.839-0.584-3.011-1.742c-0.02-0.124-0.126-0.215-0.253-0.215h-1.137c-0.141,0-0.254,0.112-0.254,0.253 c0,1.482,0.806,3.248,4.655,3.248C17.501,17.007,19.099,15.91,19.099,13.993z"/></svg></span>
+                            </div>
+                            <div class="text-white hover:text-primary mr-3">
+                                <span class=" fill-current"><svg role="img" width="30px" hight="30px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GNU IceCat</title><path d="M10.437.001c-.365.006-.743.03-1.136.075-4.786.54-7.595 4.525-7.758 9.357C.423 11.63.094 14.213.821 16.74c1.392 4.841 6.201 7.767 11.143 7.187l.906-.107c4.944.327 5.999-1.021 7.182-4.308.125-.27.305-.768.568-1.57.007-.037.016-.076.021-.096.788-2.147.903-4.57.24-6.875a9.996 9.996 0 0 0-.272-.81c-.03-.19-.024-.42.009-.599.29-.474.648-.83 1.076-1.097l.272-1.871c.287-.322.177-.6.19-1.058.166-.08.258-.214.327-.43.077-.237.447-.686.861-1.034.064-.188.224-.572.222-.893-1.984.227-3.23.608-4.226-.61l-.53-.208c-.24-.372-.67-.584-.978-.95l-.35 1.21c-.43-.265-2.742-2.688-7.045-2.62zm.14.795c2.59.036 4.962 1.344 6.207 2.28l-.95.354-.596-.382-.27.787v.325l-.733 1.762-.08-.026.379-1.573.57-1.517-.191-.163-.84.92c-.18.979-.09 2.358-.541 2.93.14-1.15.34-2.155.352-3.498l-.488-.162c-.113.594-.265 1.275-.382 1.652l.163-1.706-.621.405v.976l-.163-.541-.056-.976-.216-.03-.162.625c.028.27-.015.542.216.813l.056 2.06.133.246-.243 1.165.027-1.139-.08-.08-.163-2.007-.271-1.085-.435-.27-.163-.46-.46-.03 1.03 3.69.08 1.109c-.117-.526-.112-1.1-.567-1.49.045-.553-.036-1.093-.706-1.573l-.976-2.005c-.033-.237-.366-.276-.597-.381-.07.319-.13.642.082 1.032.488.775.976 1.555 1.464 1.978l.027.949c-.16-.875-.602-1.347-.76-1.219-.005-.713-.79-.98-1.245-1.437l-.056-.786-.27-.056c.17.532-.217.57.542 1.626l.027.381c-.29-.196-.578-.563-.867-.975l-.352-.624c.038.427-.175.523.134 1.274.454.395.864.974 1.383 1.112 0 0 .109.19 0 .19-.108 0-.325-.084-.325-.084-.3-.137-.585-.259-1.165-.677l-.597-1.762-.272-.053.056.949.242.107.027.623c.106.37.227.517.408.462-.101.124-.22.15-.461.136-.2-.378-.324-.745-.733-1.192l-.27-.787-.162.163a2.23 2.23 0 0 0 0 .976c-.264-.157-.656-.592-1.122-.819C6.105 1.513 8.469.832 10.327.798c.084-.001.167-.003.25-.002zm7.553 2.188l.517.171 1.514.864 2.146.018c-.615.242-1.373.525-1.858.672l-.613-.018c-.485-.414-.874-.612-1.309-.875-.526.551-.837 1.033-1.01 1.736l.152-1.19.52-1.17zm-13.577.331l.547 1.09.026.243-.298-.107-.27-.623-.298.215-.216-.128c.156-.246.327-.476.51-.69zm3.519 2.309c1.613-.037 1.868 1.303 2.127 2.543v2.223c.186.019.567 1.135.488 1.49-.045.204.488 1.422.45 1.426.288.278.235.248.465.424.316.243.602 1.134.426 1.264-.167.124.22.4.312.6.566.506.987 1.013.978 1.52l.27.487.514.08.136.192.65.08c.375-.08.32-.485.435-.76.022-.278-.057-.598-.461-.949.021-.421.074-.836-.325-1.327.056-.503-.311-.92-.598-1.355-.034-.373-.196-.883-.32-1.378-.06-.244-.089-.497-.138-.738-.181-1.674.058-1.862.133-2.765.618-.93.943-1.376 1.493-1.573l.704.87c.347.631.198 1.44 1.058 1.599l.022.021c.439-.396 1.02-.383 1.493-.395l-.057.187c-.57-.06-1.035-.074-1.42.216l.383.374c.412-.536.98-.5 1.539-.52l.006.206c-.604-.08-1.181.021-1.494.362l.123.117h.005c.465-.363 1.022-.383 1.549-.39l-.104.184c-.53.044-.893.008-1.272.23.293.03.587.057.88.085l.11.243.676.056c.12.03.215.042.302.045.083.22.157.444.224.674a9.983 9.983 0 0 1 .058 5.27c-1.356 3.64-2.797 4.614-5.729 4.418-3.06-.205-5.53-3.605-7.706-8.264-.475-1.292-1.638-2.11-2.313-1.42-3.073 3.055.394 8.49 2.1 9.801a16.34 16.34 0 0 0 2.87 1.67c-3.38-.563-6.27-2.914-7.245-6.308-1.177-4.092.77-8.374 4.486-10.423l.014-.006c.694-.259 1.251-.376 1.703-.386zm10.22 2.04c.293.044.838.365 1.136.663.09.243-.135.353-.12.496.008.023.004.031.003.032-.001-.011-.001-.022-.003-.032-.023-.072-.42-.56-1.016-1.16zm1.804 2.18c-.003.254-.083.341-.192.475-.111.009-.39-.075-.512-.25.185-.212.469-.21.704-.224zm-2.834.172c-.059.07-.086.157-.156.305.092-.14.146-.2.207-.244zm.141.176c-.225.063-.386.418-.611.92.24-.296.406-.716.744-.85zm-11.84 2.91l.054 1.055-1.653.949-.027-.786c.689.179 1.147-.56 1.627-1.219zm.734 2.25l.242.623-2.087 1.138-.299-.706c2.09-.764 1.731-.759 2.144-1.056zm.757 1.436l.272.461c-.787.389-1.435.912-2.005 1.517l-.435-.866c.789-.24 1.53-.572 2.168-1.112zm1.005 1.301l.46.434c-.36.81-1.106 1.312-1.817 1.843l-.73-.84c.716-.469 1.626-.84 2.087-1.437zm1.539 1.503c.072.432-.222 1.073-1.214 2.021-.386-.174-.785-.336-1.032-.65 1.607-.814 2.02-1.253 2.139-1.468.042-.006.112.032.107.097zm1.01.667c.036.382-.041.829.188 1.082l.216.056c-.113.47-.34.821-.325 1.291-.857-.208-.951-.297-1.274-.504.996-1.549 1.186-1.913 1.194-1.925zm1.407.784l1.058 1.22c-.106.584-.097.933.299 1.085-.599-.033-1.186-.04-1.68-.344.43-.637.423-1.208.323-1.961zm5.325.475c.307.467.348.706.655.813-.405.393-.587.47-1.063.65.149-.303 0-.728-.134-1.244-.1-.192.4-.176.542-.219zm-2.993.284c1.786.534 1.18.872 1.729 1.405-.472.1-.904.205-1.656.163.555-.411.301-.87-.073-1.568z"/></svg></span>
+                            </div>
+                            <div class="text-white hover:text-primary mr-3">
+                                <span class=" fill-current"><svg role="img" width="30px" hight="30px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>npm</title><path d="M1.763 0C.786 0 0 .786 0 1.763v20.474C0 23.214.786 24 1.763 24h20.474c.977 0 1.763-.786 1.763-1.763V1.763C24 .786 23.214 0 22.237 0zM5.13 5.323l13.837.019-.009 13.836h-3.464l.01-10.382h-3.456L12.04 19.17H5.113z"/></svg></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <div class="self-center relative">
+                        <img src="./src/img/hero.png" alt="" class="lg:scale-125 lg:top-72 translate-x-1/2 -left-1/2 md:scale-70 scale-75 absolute">
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="pt-32 pb-20">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="md:w-1/2 w-full mb-5 ">
+                        <div class="max-w-md px-8 mx-auto">
+                            <span class="text-sm font-DMsans tracking-wider font-bold lg:text-lg text-primary mb-5">BUKU INI UNTUK SIAPA</span>
+                            <p class="font-DMsans text-2xl tracking-wider lg:text-3xl font-bold">Buku yang cocok dibaca untuk front-end dan back-end, bahkan UI designer!</p>
+                        </div>
+                </div>
+                <div class="md:w-1/2 w-full mb-5 mt-0">
+                    <div class="max-w-md mr-5 px-8 mx-auto">
+                        <p class="font-DMsans lg:text-lg tracking-wider text-justify text-slate-300 text-sm font-thin">Buku ini bukan hanya untuk front-end developer yang ingin meningkatkan skill, buku ini juga cocok untuk back-end developer dan UI designer agar dapat menulis style tanpa harus menulis kode CSS dan tanpa mengandalkan front-end developer!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="post" class="pt-32 pb-16">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full lg:w-1/3 mx-auto">
+                    <div class="px-4 mb-5">
+                        <img src="./src/img/post1.png" alt="" class="mx-auto">
+                        <h1 class="text-center font-DMsans font-bold my-3 ">Utility-First Framework</h1>
+                        <p class="text-center text-sm text-slate-400">Tailwind hadir dengan konsep utility-first. Utility-first artinya banyak class-class kecil yang bisa digabung untuk menjadi sebuah UI.</p>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/3 mx-auto">
+                    <div class="px-4 mb-5">
+                        <img src="./src/img/post2.png" alt="" class="mx-auto" >
+                        <h1 class="text-center font-DMsans font-bold my-3">Tailwind JIT Engine</h1>
+                        <p class="text-center text-sm text-slate-400">JIT engine akan men-generate utility-class yang kita gunakan saja. Ini akan membuat pengalaman pengembangan semakin baik.</p>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/3 mx-auto">
+                    <div class="px-4 mb-5">
+                        <img src="./src/img/post3.png" alt="" class="mx-auto">
+                        <h1 class="text-center font-DMsans font-bold my-3">Unopinionated-Framework</h1>
+                        <p class="text-center text-sm text-slate-400">Tailwind tidak memiliki pra-desain komponen apapun, ini membuat desain website yang kita buat menjadi unik.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="writer " class="bg-primary pt-16 pb-16">
+        <div class="container ">
+            <div class="flex flex-wrap">
+                <div class="w-full mb-5 lg:w-1/3 px-4">
+                    <h3 class="font-DMsans text-sm text-white mb-3 tracking-wider">BUKU INI UNTUK SIAPA</h3>
+                    <h1 class="text-3xl font-bold text-white max-w-md">Kata Pengantar Dari Penulis Buku</h1>
+                    <hr class="max-w-sm mt-3">
+                    <div class="flex flex-wrap mt-3 ">
+                        <div class="mr-4">
+                            <img src="./src/img/foto.png" alt="">
+                        </div>
+                        <div class="mr-4 ">
+                            <h1 class="text-lg font-DMsans text-white font-bold">Satrio Adi</h1>
+                            <p class="text-slate-300 text-sm">@saw_id</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full mb-5 lg:w-2/3 px-4 ">
+                   <p class="max-w-xl tracking-wider mx-auto justify-center text-white lg:text-lg  text-base text-left">"Tailwind sangat memungkinkan kamu untuk membangun sebuah desain website yang unik dan tanpa kamu perlu menulis kode CSS sedikitpun. Mungkin kamu akan berpikir bahwa kamu akan membutuhkan waktu yang lebih lama ketika membangun sebuah website dengan utility-first framework ketimbang dengan framework UIkit. Ya, benar. Karena kamu harus memikirkan desain dan mengimplementasikan desain tersebut dari awal sendiri. Namun, kamu perlu ingat manfaat-manfaat yang diberikan oleh utility-first framework, sehingga kamu dapat mempertimbangkannya. Dalam buku ini, kita akan mempelajari framework Tailwind CSS. Mulai dari konsep, workflow, hingga membuat sebuah website responsive dengan TailwindCSS. Buku ini tidak untuk semua orang, setidaknya kamu memahami cara mengoperasikan komputer, memahami HTML, memahami CSS, atau bisa dibilang kamu sudah pernah membangun website sebelumnya dan ingin mempelajari hal baru untuk meningkatkan skill."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="manfaat" class="pt-20 pb-16 bg-gradient-to-b from-white to-[#EDFCFD]">
+        <div class="container">
+            <div class="flex flex-wrap ">
+                <div class="w-full mb-10 lg:w-1/2 px-4">
+                    <h3 class="font-DMsans text-sm lg:text-lg text-primary mb-3 uppercase">Manfaat Buku</h3>
+                    <h1 class="text-2xl lg:text-3xl font-bold font-DMsans tracking-wider mx-w-md mb-4">Manfaat yang kamu dapatkan ketika membeli buku Tailwind CSS ini</h1>
+                    <p class="text-sm lg:text-base  font-DMsans text-slate-400 max-w-md">"Buku itu seperti cermin: kalau yang berkaca padanya adalah seorang yang bodoh, engkau tak bisa berharap yang terpantul adalah seorang yang jenius." - J.K Rowling</p>
+                    <div class="flex flex-wrap max-w-md mt-5">
+                            <div class="w-1/6 self-center justify-center mx-auto"><img src="./src/img/Frame 358.png" alt="" width="20px" class="mx-auto"></div>
+                            <div class="w-5/6 text-sm mx-auto text-slate-400 font-DMsans">Buku ini cocok untuk seorang yang ingin memperdalam front-end development agar tidak hanya sekadar Bootstrap</div>
+                    </div>
+                    <div class="flex flex-wrap max-w-md mt-5">
+                        <div class="w-1/6 self-center justify-center mx-auto"><img src="./src/img/Frame 358.png" alt="" width="20px" class="mx-auto"></div>
+                        <div class="w-5/6 text-sm mx-auto text-slate-400 font-DMsans">Buku ini ditulis berdasarkan dari dokumentasi Tailwind CSS langsung, agar meminimalisir terjadinya miskonsepsi</div>
+                    </div>
+                    <div class="flex flex-wrap max-w-md mt-5">
+                        <div class="w-1/6 self-center justify-center mx-auto"><img src="./src/img/Frame 358.png" alt="" width="20px" class="mx-auto"></div>
+                        <div class="w-5/6 text-sm mx-auto text-slate-400 font-DMsans">Sangat ramah untuk back-end developer yang phobia terhadap CSS dan mudah dipahami bagi UI designer</div>
+                    </div>
+                    <div class="flex flex-wrap max-w-md mt-5">
+                        <div class="w-1/6 self-center justify-center mx-auto"><img src="./src/img/Frame 358.png" alt="" width="20px" class="mx-auto"></div>
+                        <div class="w-5/6 text-sm mx-auto text-slate-400 font-DMsans">Studi kasus membangun sebuah website responsive dengan Tailwind CSS tanpa ngoding CSS</div>
+                    </div>
+                </div>
+                <div class="w-full mb-10 lg:w-1/2">
+                    <div class="relative flex justify-center "> 
+                        <img src="./src/img/Group 19.png" alt="" class="rotate-6 mx-auto">
+                        <div class="max-w-lg w-full h-32 mx-auto rounded-lg bottom-0 bg-primary absolute ">
+                            <div class="flex flex-wrap justify-center items-center">
+                                <div class="w-1/3 px-4 py-4 text-center justify-center mt-4">
+                                    <h1 class="text-2xl font-bold text-white">19</h1>
+                                    <p class="text-sm text-white">jumlah character</p>
+                                </div>
+                                <div class="w-1/3 px-4 py-4 text-center justify-center mt-4">
+                                    <h1 class="text-2xl font-bold text-white">253</h1>
+                                    <p class="text-sm text-white">jumlah halaman</p>
+                                </div>
+                                <div class="w-1/3 px-4 py-4 text-center justify-center mt-4">
+                                    <h1 class="text-2xl font-bold text-white">60</h1>
+                                    <p class="text-sm text-white">hari menulis</p>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="studi" class="pt-20 pb-16 bg-[#EDFCFD] ">
+        <div class="container">
+            <div class="flex flex-wrap ">
+                <div class="w-full mb-10 lg:w-1/2">
+                    <div>
+                        <img src="./src/img/Group 25.png" alt="" class="-rotate-6 hover:rotate-0 transition ea">
+                    </div>
+                </div>
+                <div class="w-full mb-10 lg:w-1/2 px-4">
+                    <h3 class="font-DMsans text-sm lg:text-lg text-primary mb-3 uppercase">Selain Itu</h3>
+                    <h1 class="text-2xl lg:text-3xl font-bold font-DMsans tracking-wider mx-w-md mb-4">Buku dengan studi kasus nyata, juga komunitas yang ramah</h1>
+                    <p class="text-sm lg:text-base  font-DMsans text-slate-400 max-w-md mb-10">Buku ini diakhiri dengan membangun website yang responsive dengan Tailwind. Selain itu kamu juga kamu dapat bergabung ke komunitas untuk bertanya ketika mengalami kesulitan.</p>
+                    <div class="rounded-lg shadow-lg px-3 py-5 mb-5 bg-white max-w-md">
+                        <div class="flex ">
+                            <div class="w-1/5">
+                                <img src="./src/img/livedemo.png" alt="">
+                            </div>
+                            <div class="w-3/5">
+                                <h1 class="text-sm font-DMsans text-primary font-bold mb-2">Live Demo Project</h1>
+                                <p class="text-sm font-DMsans text-justify">Lihat live demo project yang akan kamu buat di akhir buku ini.</p>
+                            </div>
+                            <div class="w-1/5">
+                                <a href="">
+                                <div class=" mx-auto my-auto">
+                                  <img src="./src/img/arow.png" alt="" width="30px" class="mx-auto my-auto pt-5 hover:opacity-40">
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rounded-lg shadow-lg px-3 py-5 bg-white max-w-md">
+                        <div class="flex ">
+                            <div class="w-1/5">
+                                <img src="./src/img/chat.png" alt="">
+                            </div>
+                            <div class="w-3/5">
+                                <h1 class="text-sm font-DMsans text-primary font-bold mb-2">Dukungan Komunitas</h1>
+                                <p class="text-sm font-DMsans text-justify">Sebuah server Discord berisi teman-teman yang akan membantu kamu.</p>
+                            </div>
+                            <div class="w-1/5">
+                                <a href="">
+                                <div class=" mx-auto my-auto">
+                                  <img src="./src/img/arow.png" alt="" width="30px" class=" mx-auto my-auto pt-5 hover:opacity-40">
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="book" class="bg-[#EDFCFD] pt-20 pb-24 ">
+        <div class="container">
+            <div class="w-full flex justify-center">
+                <div class="max-w-3xl ">
+                    <div class="text-center mb-5 ">
+                        <span class="px-4 py-3 bg-cyan-200 uppercase rounded-full font-DMsans text-sm text-primary">pertinjau</span>
+                    </div>
+                    <h1 class="font-DMsans text-xl lg:text-3xl text-center tracking-wider mb-4">Sebelum membeli, kamu dapat melihat beberapa halaman pratinjau isi di dalam buku ini</h1>
+                    <p class="text-sm text-slate-400 text-center max-w-md mx-auto mb-10">Klik pada gambar halaman di sebelah kanan buku untuk melihat lebih detail halaman buku tersebut dan membaca isinya.</p>
+                </div>
+            </div>
+            <div class="flex flex-wrap lg:mt-20 mt-0">
+                <div class="w-full lg:w-1/2">
+                    <img src="./src/img/book2.png" alt="" class="lg:scale-105 scale-75 ">
+                </div>
+                <div class="w-full lg:w-1/2 ">
+                    <div class="relative self-start  lg:scale-75 scale-50  ">
+                        <div class="lg:pt-16 pt-0 ">
+                            <img src="./src/img/img7.png" alt="" class="blur-sm lg:scale-50 sm:scale-0 lg:left-[750px] absolute transition ease-in-out">
+                            <img src="./src/img/img6.png" alt="" class="blur-sm lg:scale-75 sm:scale-0 lg:left-[650px] absolute transition ease-in-out">
+                            <img src="./src/img/img5.png" alt="" class="blur-sm lg:scale-90 sm:scale-0 lg:left-[550px] absolute transition ease-in-out">
+                            <img src="./src/img/img4.png" alt="" class="blur-sm lg:scale-95 sm:scale-0 lg:left-[450px] absolute transition ease-in-out">
+                            <img src="./src/img/img3.png" alt="" class="blur-sm scale-105 left-[100px] md:left-60 lg:left-[350px] absolute transition ease-in-out">
+                            <img src="./src/img/img2.png" alt="" class="blur-sm scale-110 -left-[0px] md:left-40 lg:left-[200px] absolute transition ease-in-out">
+                            <img src="./src/img/img1.png" alt="" class=" scale-125 -left-[100px] lg:-left-[100px] absolute ">
+                            <a href=""><img src="./src/img/arrow2.png" alt="" class=" absolute translate-y-0 lg:translate-y-60 lg:translate-x-64 translate-x-32 hover:opacity-40"></a> 
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <p class="font-DMsans text-sm text-slate-500 text-center font-bold mb-5">halaman 1-257</p>
+        </div>
+    </section>
+    <section id="price" class="pt-32  bg-gradient-to-b from-[#EDFCFD] to-white">
+        <div class="bg-cover pt-32 pb-32 " style="background-image: url(./src/img/Rectangle\ 20.png);">
+            <div class="container pt-32 pb-32">
+                <div class="text-center mb-8 mt-52">
+                    <span class="px-4 py-3 bg-slate-700 uppercase rounded-full font-DMsans text-sm text-primary">harga buku</span>
+                </div>
+                <h1 class="text-center font-DMsans text-white text-2xl lg:text-3xl mb-10 mx-auto max-w-xl"> Kamu dapat membeli buku fisik atau buku elektronik untuk dibaca di perangkat kamu</h1>
+                <p class="text-center text-sm font-DMsans lg:text-lg mx-auto  max-w-lg  text-slate-400 mb-10">Dilarang memperjualbelikan atau memperbanyak tanpa seizin penulis. Hak cipta dilindungi undang-undang.</p>
+                <div class="flex flex-wrap">
+                    <!-- price 1 -->
+                    <div class="w-full lg:w-1/3 mb-5 py-5 px-4">
+                        <div class="px-7 py-7  lg:py-14 lg:px-14 mx-auto bg-white shadow-lg rounded-xl">
+                            <h1 class="text-sm px-4  text-primary font-DMsans font-bold mb-2">Buku Digital</h1>
+                            <h1 class="text-4xl px-4 font-DMsans font-bold lg:text-5xl mb-5">Rp100.000</h1> 
+                                <div class="flex mb-5 px-4">
+                                    <div><img src="./src/img/Frame 358.png" alt="" class="w-5 "></div>
+                                    <div class="text-lg mx-4 ">Buku lengkap</div>
+                                </div>
+                                <div class="flex mb-5 px-4">
+                                    <div><img src="./src/img/Frame 358.png" alt="" class="w-5 "></div>
+                                    <div class="text-lg mx-4 ">Akses secara digital</div>
+                                </div>
+                                <div class="flex mb-5 px-4">
+                                    <div><img src="./src/img/x.png" alt="" class="w-5 "></div>
+                                    <div class="text-lg mx-4 ">Buku fisik</div>
+                                </div>
+                                <div class="flex mb-5 px-4">
+                                    <div><img src="./src/img/Frame 358.png" alt="" class="w-5 "></div>
+                                    <div class="text-lg mx-4 ">mendapat pembaruan</div>
+                                </div>
+                                <div class="flex mb-5 px-4">
+                                    <div><img src="./src/img/Frame 358.png" alt="" class="w-5 "></div>
+                                    <div class="text-lg mx-4 ">konsultasi</div>
+                                </div>
+                                <div class="flex mb-10 px-4">
+                                    <div><img src="./src/img/Frame 358.png" alt="" class="w-5 "></div>
+                                    <div class="text-lg mx-4 ">Dapat diunduh</div>
+                                </div>  
+                                <div class="w-full items-center text-center mb-10">
+                                    <a href="" class=" px-4 md:px-24 py-3 bg-primary rounded-lg text-white font-DMsans">Beli Sekarang</a>
+                                </div>          
+                        </div>  
+                    </div>
+                    <!-- price 2 -->
+                    <div class="w-full lg:w-1/3 mb-5 py-5 px-4">
+                        <div class="px-7 py-7  lg:py-14 lg:px-14 mx-auto bg-white shadow-lg rounded-xl">
+                            <h1 class="text-sm px-4  text-primary font-DMsans font-bold mb-2">Buku Fisik</h1>
+                            <h1 class="text-4xl px-4 font-DMsans font-bold lg:text-5xl mb-5">Rp185.000</h1> 
+                                <div class="flex mb-5 px-4">
+                                    <div><img src="./src/img/Frame 358.png" alt="" class="w-5 "></div>
+                                    <div class="text-lg mx-4 ">Buku lengkap</div>
+                                </div>
+                                <div class="flex mb-5 px-4">
+                                    <div><img src="./src/img/x.png" alt="" class="w-5 "></div>
+                                    <div class="text-lg mx-4 ">Akses secara digital</div>
+                                </div>
+                                <div class="flex mb-5 px-4">
+                                    <div><img src="./src/img/Frame 358.png" alt="" class="w-5 "></div>
+                                    <div class="text-lg mx-4 ">Buku fisik</div>
+                                </div>
+                                <div class="flex mb-5 px-4">
+                                    <div><img src="./src/img/x.png" alt="" class="w-5 "></div>
+                                    <div class="text-lg mx-4 ">mendapat pembaruan</div>
+                                </div>
+                                <div class="flex mb-5 px-4">
+                                    <div><img src="./src/img/Frame 358.png" alt="" class="w-5 "></div>
+                                    <div class="text-lg mx-4 ">konsultasi</div>
+                                </div>
+                                <div class="flex mb-10 px-4">
+                                    <div><img src="./src/img/Frame 358.png" alt="" class="w-5 "></div>
+                                    <div class="text-lg mx-4 ">Dapat diunduh</div>
+                                </div>  
+                                <div class="w-full items-center text-center mb-10">
+                                    <a href="" class=" px-4 md:px-24 py-3 bg-primary rounded-lg text-white font-DMsans">Beli Sekarang</a>
+                                </div>          
+                        </div>  
+                    </div>
+                    <!-- price 3 -->
+                    <div class="w-full lg:w-1/3 mb-5 py-5 px-4">
+                        <div class="px-7 py-7  lg:py-14 lg:px-14 mx-auto bg-white shadow-lg rounded-xl">
+                            <h1 class="text-sm px-4  text-primary font-DMsans font-bold mb-2">Buku Digital + Fisik</h1>
+                            <h1 class="text-4xl px-4 font-DMsans font-bold lg:text-5xl mb-5">Rp2500.000</h1> 
+                                <div class="flex mb-5 px-4">
+                                    <div><img src="./src/img/Frame 358.png" alt="" class="w-5 "></div>
+                                    <div class="text-lg mx-4 ">Buku lengkap</div>
+                                </div>
+                                <div class="flex mb-5 px-4">
+                                    <div><img src="./src/img/Frame 358.png" alt="" class="w-5 "></div>
+                                    <div class="text-lg mx-4 ">Akses secara digital</div>
+                                </div>
+                                <div class="flex mb-5 px-4">
+                                    <div><img src="./src/img/Frame 358.png" alt="" class="w-5 "></div>
+                                    <div class="text-lg mx-4 ">Buku fisik</div>
+                                </div>
+                                <div class="flex mb-5 px-4">
+                                    <div><img src="./src/img/Frame 358.png" alt="" class="w-5 "></div>
+                                    <div class="text-lg mx-4 ">mendapat pembaruan</div>
+                                </div>
+                                <div class="flex mb-5 px-4">
+                                    <div><img src="./src/img/Frame 358.png" alt="" class="w-5 "></div>
+                                    <div class="text-lg mx-4 ">konsultasi</div>
+                                </div>
+                                <div class="flex mb-10 px-4">
+                                    <div><img src="./src/img/Frame 358.png" alt="" class="w-5 "></div>
+                                    <div class="text-lg mx-4 ">Dapat diunduh</div>
+                                </div>  
+                                <div class="w-full items-center text-center mb-10">
+                                    <a href="" class=" px-4 md:px-24 py-3 bg-primary rounded-lg text-white font-DMsans">Beli Sekarang</a>
+                                </div>          
+                        </div>  
+                    </div>
+                </div>
+                <p class="text-white text-center font-DMsans mt-20 md:mb-80 lg:mb-[400px]">*Buku digital akan dikirimkan ke alamat email kamu
+                    *Buku fisik dikirim 7 hari setelah pemesanan</p>
+            </div>
+        </div>
+    </section>
+    <section id="introduce" class="pt-20 pb-20">
+        <div class="container">
+            <div class="flex flex-wrap px-4">
+
+                <div class="w-full lg:w-1/2 mb-10">
+                    <div class="relative ">
+                    <img src="./src/img/photo.jpg" alt="" class=" mx-auto w-[360px] skew-y-6 rounded-2xl">
+                        <div class="rounded-lg shadow-lg px-4 py-4 w-52 h-20 lg:w-64 lg:h-24 bg-primary absolute left-1/2 -translate-x-1/2 lg:-right-1/3 bottom-10 lg:bottom-5">
+                            <h1 class="font-bold text-lg text-white font-DMsans">Satrio Adi Wiguno</h1>
+                            <p class="text-sm text-white font-DMsans">@saw_id</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2">
+                    <div class="px-4">
+                        <h3 class="font-DMsans text-sm lg:text-lg text-primary mb-3 uppercase">PENULIS BUKU</h3>
+                        <h1 class="max-w-xl font-bold mb-5 font-DMsans text-2xl lg:text-4xl tracking-wider">Tak kenal maka tak kenal. Berkenalan dengan penulis buku ini</h1>
+                        <p class="max-w-xl tracking-widest font-DMsans lg:text-lg font-thin text-sm">“Halo, saya Nauval. Mungkin nama ini terdengar asing di telinga kamu. Namun, kedepannya saya berharap nama ini tidak lagi terdengar asing di telinga kamu sebagai orang yang rajin berbagi hal-hal baik untuk masyarakat, khususnya dalam ilmu komputer. Saya seorang web developer yang masuk kategori apa-aja-dikerjain-selagi-ada-manfaat-nya. Meski begitu, saya lebih senang fokus di front-end development, karena --menurut saya-- ini lebih sederhana saja. Di front-end development pada dasarnya hanya perlu menguasai tiga bahasa: HTML, CSS, dan JavaScript. Sudah jelas ini sederhana, yang bikin ribet itu kamu sendiri, sudah tau kamu cocoknya pake jQuery, malah maksa pake React.”</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="slide" class="pt-32 pb-20">
+        <div class="container bg-[#EDFCFD] rounded-2xl py-6 overflow-hidden">
+            <div class="flex flex-wrap mb-10">
+                <div class="w-full lg:w-1/2 px-4 mt-5" >
+                    <h3 class="text-sm px-4 lg:px-24 text-primary font-DMsans font-bold mb-2">Textimonial</h3>
+                    <h1 class="text-2xl px-4 lg:px-24 lg:text-4xl  font-DMsans font-normal mb-2">Apa kata orang-orang yang membaca buku ini?</h1>
+                </div>
+                <div class="w-full lg:w-1/2 px-4 mt-5">
+                    <p class="px-4 max-w-lg mx-auto tracking-wider lg:text-lg text-sm">Kalo seandainya kamu belum percaya dengan buku ini maka tidak apa-apa, karena yang patut kamu percayai adalah Tuhan. Tapi, mungkin beberapa ulasan ini bisa membangkitkan hasratmu untuk membeli buku ini.</p>
+                </div>
+            </div>
+            <!-- scroll -->
+            <ul class="flex overflow-x-auto gap-6 snap-x snap-mandatory px-4 py-32">
+                <li class="shrink-0 scroll-ml-6 px-4 mr-4 cursor-pointer">
+                   <div class="w-96 h-64 mx-auto bg-white rounded-lg shadow-lg px-4">
+                    <p class="px-8 py-8">kalo kata gua sih coba2 bisa kali yak ngga harus sama hehehehe ngga ape dah</p>
+                    <img src="./src/img/foto.png" alt="" class="px-8">
+                   </div>
+                </li> 
+                <li class="shrink-0 scroll-ml-6 px-4 mr-4 cursor-pointer">
+                    <div class="w-96 h-64 mx-auto bg-slate-200 rounded-lg shadow-lg px-4">
+                     <p class="px-8 py-8">coba2 ngga ada salahnya yang salah yang kagak mencoba</p>
+                     <img src="./src/img/foto.png" alt="" class="px-8">
+                    </div>
+                 </li> 
+                 <li class="shrink-0 scroll-ml-6 px-4 mr-4 cursor-pointer">
+                    <div class="w-96 h-64 mx-auto bg-slate-300 rounded-lg shadow-lg px-4">
+                     <p class="px-8 py-8">kita bedain dikit lagi kali yang slate 300</p>
+                     <img src="./src/img/foto.png" alt="" class="px-8">
+                    </div>
+                 </li> 
+                 <li class="shrink-0 scroll-ml-6 px-4 mr-4 cursor-pointer">
+                    <div class="w-96 h-64 mx-auto bg-slate-400 rounded-lg shadow-lg px-4">
+                     <p class="px-8 py-8">coba ganti warna bg kali yak ke slate 400</p>
+                     <img src="./src/img/foto.png" alt="" class="px-8">
+                    </div>
+                 </li> 
+                
+            </ul>
+        </div>
+    </section>
+ <section id="download" class="pt-20 pb-32">
+    <div class="container">
+        <div class="mt-52 text-center">
+            <div class="rounded-full w-36 text-center px-4 py-2 mx-auto bg-[#EDFCFD]">
+                <h1 class="text-primary uppercase text-sm font-DMsans">Beli Buku</h1>
+            </div>
+            <h1 class="text-center mt-4 text-2xl lg:text-3xl font-DMsans font-semibold mb-4"> Anda ingin segera memesan buku ini?</h1>
+            <p class="mb-8 max-w-md mx-auto lg:text-xl font-thin text-sm text-center font-DMsans">Otak Kita butuh asupan nutrisi juga, tidak hanya perut saja. </p>
+            <div class="flex flex-wrap mt-4 max-w-lg mx-auto">
+               
+                <div class="w-1/2 lg:text-left">
+                    <div class="font-serif text-center text-sm lg:text-xl ">sudah terjual</div>
+                    <div class="font-DMsans font-bold text-center text-lg lg:text-3xl t">501,234+</div>
+                </div>   
+                <div class="w-1/2">
+                  <a href=""><div class="text-sm lg:w-52 text-white bg-primary rounded-full shadow-lg mx-auto  py-4">Beli sekarang <span class="ring-1 rounded-full px-1 ml-1 ring-white"> > </span></div></a> 
+                </div>
+            </div>
+        </div>
+    </div>
+ </section>
+ <footer class="pt-32 pb-16 bg-second rounded-tr-[50px]">
+    <div class="container">
+        <div class="flex flex-wrap">
+            <div class="w-full lg:w-2/3 mb-5">
+                <h1 class="text-white text-lg lg:text-3xl font-semibold font-DMsans mb-4">Sudah siap meningkatkan skill kamu?</h1>
+                <p class="text-white text-sm lg:text-lg font-DMsans font-thin">Mulai belajar hari ini di Multinity, atau dapatkan jawaban atas
+                    pertanyaan kamu di halaman bantuan.</p>
+            </div>
+            <div class="w-full lg:w-1/3 mb-5 ">
+                <div class="flex flex-wrap">
+                    <div class="w-1/2 px-4">
+                      <a href="">  <div class="text-sm text-center text-white bg-third rounded-lg px-4 shadow-lg mx-auto  py-6">Pusat Bantuan</div> </a>
+                    </div> 
+                    <div class="w-1/2 px-4">
+                     <a href=""><div class="text-sm text-center text-white bg-primary rounded-lg px-4 shadow-lg mx-auto  py-6">Mendaftar</div></a>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <hr class="text-third opacity-10 my-16">
+        <div class="flex flex-wrap ">
+            <div class=" w-full lg:w-1/2 mb-5 px-4">
+                <span class="rounded-full mr-3 text-white font-bold bg-primary px-3 py-2">M</span>
+                <h1 class="my-4 text-white font-DMsans font-bold">The Malaka</h1>
+                <p class="text-white font-DMsans">Malaka adalah situs penyedia kursus ilmu komputer berbahasa Indonesia, mulai dari pengembangan hingga desain grafis.</p>
+            </div>
+            <div class="w-full lg:w-1/6 px-4 mb-5">
+                <h1 class="text-slate-300 font-DMsans tracking-wider mb-4">PRODUCTS</h1>
+                <h3 class="text-slate-300 text-base my-1">Course</h3>
+                <h3 class="text-slate-300 text-base my-1">Books</h3>
+                <h3 class="text-slate-300 text-base my-1">Freebies</h3>
+                <h3 class="text-slate-300 text-base my-1">Classes</h3>
+            </div>
+            <div class=" w-full lg:w-1/6 px-4 mb-5">
+                <h1 class="text-slate-300 font-DMsans tracking-wider mb-4">COMPANY</h1>
+                <h3 class="text-slate-300 text-base my-1">About Us</h3>
+                <h3 class="text-slate-300 text-base my-1">Contact</h3>
+                <h3 class="text-slate-300 text-base my-1">Privacy Policy</h3>
+                <h3 class="text-slate-300 text-base my-1">Terms of Service</h3>
+                <h3 class="text-slate-300 text-base my-1">help</h3>
+            </div>
+            <div class=" w-full lg:w-1/6 px-4 mb-5">
+                <h1 class="text-slate-300 font-DMsans tracking-wider mb-4">GET IN TOUCH</h1>
+                <h3 class="text-slate-300 text-base my-1">Twitter</h3>
+                <h3 class="text-slate-300 text-base my-1">Facebook</h3>
+                <h3 class="text-slate-300 text-base my-1">Dribble</h3>
+            </div>
+        </div>
+        <hr class="text-third opacity-10 mx-auto my-16">
+        <div class="text-sm text-white text-center w-full">COPYRIGHT © 2022 — DESIGN NAUVAL</div>
+    </div>
+ </footer>
+ <script src="./dist/script.js">
+ </script>
+</body>
+
+</html>
